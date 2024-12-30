@@ -1,0 +1,20 @@
+ul{
+    display: flex;  /* By default ita horizontal*/
+    padding: 20px;
+    margin: 0;  
+    text-decoration: none;
+    list-style-type:none;
+    justify-content:space-evenly;
+    background-color: cadetblue;
+}
+
+li{
+    
+    cursor: pointer;
+    padding: 15px
+}
+
+li:hover{
+    background-color:beige;
+    border-radius: 22px;
+}
