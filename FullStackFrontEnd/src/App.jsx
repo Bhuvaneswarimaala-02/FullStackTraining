@@ -11,6 +11,11 @@ import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
 import NavBar from './Components/FunctionalComponents/NavBar';
 import Form from './Components/FunctionalComponents/Form';
+import UseEffect from './Components/FunctionalComponents/UseEffect';
+import UseRef from './Components/FunctionalComponents/UseRef';
+import UseContext from './Components/FunctionalComponents/UseContext';
+import UseMemo from './Components/FunctionalComponents/UseMemo';
+import Images from './Components/FunctionalComponents/Images';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -24,6 +29,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About college = "Kongu Engineering College" clg1 = "Kongu Arts" clg2= "Naturopathy college"/>} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/use-effect" element={<UseEffect />} />
+        <Route path="/UseRef" element={<UseRef />} />
+        <Route path="/UseContext" element={<UseContext />} />
+        <Route path="/UseMemo" element={<UseMemo />} />
+        <Route path="/Images" element={<Images />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Form />
