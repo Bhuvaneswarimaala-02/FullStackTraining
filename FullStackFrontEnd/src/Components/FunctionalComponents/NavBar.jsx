@@ -13,6 +13,7 @@ var NavBar=()=>{
                     <li><Link to='/UseContext'>UseContext</Link></li>
                     <li><Link to='/UseMemo'>UseMemo</Link></li>
                     <li><Link to='/Images'>Images</Link></li>
+                    <li><Link to='/Mongodb'>Mongodb</Link></li>
                     <li><Link to='/contact'>Contact</Link></li>
                 </ul>
             </nav>
