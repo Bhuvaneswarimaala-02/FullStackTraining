@@ -16,6 +16,7 @@ import UseRef from './Components/FunctionalComponents/UseRef';
 import UseContext from './Components/FunctionalComponents/UseContext';
 import UseMemo from './Components/FunctionalComponents/UseMemo';
 import Images from './Components/FunctionalComponents/Images';
+import Mongodb from './Components/FunctionalComponents/Mongodb';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/UseContext" element={<UseContext />} />
         <Route path="/UseMemo" element={<UseMemo />} />
         <Route path="/Images" element={<Images />} />
+        <Route path="/Mongodb" element={<Mongodb />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Form />
