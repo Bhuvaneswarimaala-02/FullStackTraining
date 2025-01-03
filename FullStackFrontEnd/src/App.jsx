@@ -16,6 +16,8 @@ import UseRef from './Components/FunctionalComponents/UseRef';
 import UseContext from './Components/FunctionalComponents/UseContext';
 import UseMemo from './Components/FunctionalComponents/UseMemo';
 import Images from './Components/FunctionalComponents/Images';
+import LoginPage from './Components/FunctionalComponents/LoginPage';
+import SignupPage from './Components/FunctionalComponents/SignupPage';
 import Mongodb from './Components/FunctionalComponents/Mongodb';
 
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
@@ -28,6 +30,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/LoginPage" element={<LoginPage />} />
+        <Route path="/SignupPage" element={<SignupPage />} />
         <Route path="/about" element={<About college = "Kongu Engineering College" clg1 = "Kongu Arts" clg2= "Naturopathy college"/>} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/use-effect" element={<UseEffect />} />
