@@ -1,27 +1,52 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function SignupPage() {
-  const [name, setName] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  var navigate=useNavigate();
 
-  const handleSignup = (e) => {
-    e.preventDefault();
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
-  };
+  // const handleSignup = (e) => {
+  //   e.preventDefault();
+  //   console.log('First Name:', firstName);
+  //   console.log('Last Name:', lastName);
+  //   console.log('Email:', email);
+  //   console.log('Password:', password);
+  // };
+  const signup=async (event)=>{
+    event.preventDefault() //to prevent refresh of the whole page on submit
+    var req = await axios.post("http://127.0.0.1:3001/signup",{
+      firstName:firstName,
+      lastName:lastName,
+      email:email,
+      password:password
+    })
+    console.log(req);
+    navigate('/LoginPage')
+  }
 
   return (
     <div>
       <h1>Signup</h1>
-      <form onSubmit={handleSignup}>
+      <form onSubmit={signup}>
         <div>
-          <label>Name:</label>
+          <label>First Name:</label>
           <input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            required
+          />
+        </div>
+        <div>
+          <label>Last Name:</label>
+          <input
+            type="text"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
             required
           />
         </div>

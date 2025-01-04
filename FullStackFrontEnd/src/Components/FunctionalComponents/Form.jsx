@@ -10,11 +10,15 @@ var Form=()=>{
                 <br></br>
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Last Name"></input>
-                <h4>How are you  feeling?</h4>                 
-                <input type="radio" id="happy" name="currentMood" value="happy"></input>
+                <br></br>
+                {/* <h4>How are you  feeling?</h4>             */}
+                <br></br>
+                <label for="review">Are you Happy?</label>
+                <input type="text" id="review" name="review" placeholder="Yes"></input>     
+                {/* <input type="radio" id="happy" name="currentMood" value="happy"></input>
                 <label for="happy">Happy:)</label>
                 <input type="radio" id="notHappy" name="currentMood" value="notHappy"></input>
-                <label for="nothappy">Not Happy:(</label>
+                <label for="nothappy">Not Happy:(</label> */}
                 <br></br>
                 <div class="centeredButton">
                     <button id="butn">Submit</button>
