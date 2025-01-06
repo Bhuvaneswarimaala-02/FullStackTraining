@@ -18,7 +18,7 @@ function SignupPage() {
   // };
   const signup=async (event)=>{
     event.preventDefault() //to prevent refresh of the whole page on submit
-    var req = await axios.post("http://rampexfullstack.onrender.com/signup",{
+    var req = await axios.post("https://rampexfullstack.onrender.com/signup",{ //before deploying bakcend server "http://127.0.0.1:3001/signup"
       firstName:firstName,
       lastName:lastName,
       email:email,
