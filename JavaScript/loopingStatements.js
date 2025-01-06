@@ -40,7 +40,5 @@ objType1 = {
 
 // printing objects using for each loop
 Object.keys(objType1).forEach(function(key) {
-
     console.log(key, objType1[key]);
-  
   });
